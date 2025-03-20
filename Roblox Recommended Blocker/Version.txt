@@ -1,4 +1,4 @@
-Current Version: 1.0
+Current Version: 1.1
 
 Info: 
 RBB has two features: Blocks any recommended games which cleans up the homepage and also removes useless features or buttons on the sidebars which furthur cleans this. 
