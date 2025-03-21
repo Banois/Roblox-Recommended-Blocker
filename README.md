@@ -28,6 +28,7 @@ _Most recent update was adding a new temporary toggle to remove the hunt in the 
 
 ---
 
+I try to release updates as fast as possible. If you are having an issue, there's a good chance I am too. 
 If you have any questions, comments, or concerns, you may contact me on my Discord **"banus"**.  
 
 **Enjoy!**
