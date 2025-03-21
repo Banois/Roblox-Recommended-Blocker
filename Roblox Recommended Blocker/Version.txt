@@ -1,10 +1,4 @@
-Current Version: 1.1
+Current Version: 1.2
 
 Info: 
-RBB has two features: Blocks any recommended games which cleans up the homepage and also removes useless features or buttons on the sidebars which furthur cleans this. 
-
-Extra info:
-RBB is currently undergoing an update to 1.1 and 1.2 soon. 
-1.1 will contain an autoupdate feature which essentially checks this file for the version and the github version and automatically prompts the user to update. The following update will contain a limited time feature to block events (The Hunt) from the home page. 
-
-The auto update feature will be permenant and updating can be accessed any time by clicking the check for updates button when opening the extension menu. 
+Most recent update was adding a new temporary toggle to remove the hunt in the home page. I also added a check for updates feature in the menu for 1.1 (which hardly lasted) which you can click at any time.
