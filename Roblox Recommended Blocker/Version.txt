@@ -1,4 +1,1 @@
-Current Version: 1.2
-
-Info: 
-Most recent update was adding a new temporary toggle to remove the hunt in the home page. I also added a check for updates feature in the menu for 1.1 (which hardly lasted) which you can click at any time.
+Current Version: 1.22
