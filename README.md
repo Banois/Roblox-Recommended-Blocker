@@ -12,10 +12,10 @@
 ---
 
 ### **Update Log**:  
-**Current Version**: **1.2**  
+**Current Version**: **1.21**  
 **Info**:  
 _Most recent update was adding a new temporary toggle to remove the hunt in the home page. I also added a check for updates feature in the menu for 1.1 (which hardly lasted) which you can click at any time.
-Recently added an update that removes the most recent "The Hunt" update to the homepage. Wasn't a big fix so I won't count it as an update._
+Recently added an update that removes the most recent "The Hunt" update to the homepage. Wasn't a big fix so I won't count it as a big update._
 
 ---
 
