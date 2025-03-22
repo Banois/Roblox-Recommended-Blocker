@@ -71,7 +71,8 @@
       ".rbx-platform-event-header", 
       ".rbx-platform-event-thumbnail", 
       ".sort-header > span", 
-      ".text-default"
+      ".text-default",
+      ".css-hitfbc-heroUnitContentContainer" // Newly added selector
     ];
 
     huntSelectors.forEach(selector => {
