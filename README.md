@@ -15,7 +15,7 @@
 **Current Version**: **1.3**  
 **Info**:  
 _Removed the "Remove The Hunt feature from the plugin due to it no longer being available on the homepage._
-_Currently some info with the recommended blocker as it keeps blanking the page instead of removing the recommended games. It's had this issue before so if you have it I would recommend turning it off and waiting til it goes away. Remove useless buttons still functions fine._
+_Currently some issues with the recommended blocker as it keeps blanking the page instead of removing the recommended games. It's had this issue before so if you have it I would recommend turning it off and waiting til it goes away. Remove useless buttons still functions fine._
 ---
 
 ## **How to Install**  
