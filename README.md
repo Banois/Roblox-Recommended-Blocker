@@ -12,7 +12,7 @@
 ---
 
 ### **Update Log**:  
-Current Version: 1.35
+Current Version: 1.4
 
 Info: 
 Fixed reccomended removal since it wasn't working before.
