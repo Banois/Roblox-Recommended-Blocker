@@ -24,11 +24,19 @@
 
   function runRemovals() {
     if (blockRecommended) {
-      document.querySelectorAll(".container-header > h2").forEach(header => {
-        if (header.textContent && header.textContent.toLowerCase().includes("recommended")) {
-          let sectionContainer = header.parentElement?.parentElement;
-          if (sectionContainer) {
-            sectionContainer.remove();
+      // Match text headers that indicate recommendations
+      const matchTexts = ["recommended", "because you played"];
+      document.querySelectorAll(
+        ".container-header > h2, .home-sort-header-container h2, .css-59f5rs-textOverride, .css-9h4h37-textIconRow"
+      ).forEach(header => {
+        const text = header.textContent?.toLowerCase();
+        if (text && matchTexts.some(match => text.includes(match))) {
+          const section = header.closest(".game-home-page-container > div > div") ||
+                         header.closest(".btr-home-section") ||
+                         header.closest("section") ||
+                         header.parentElement?.parentElement;
+          if (section) {
+            section.remove();
           }
         }
       });
@@ -36,24 +44,21 @@
 
     if (blockUselessButtons) {
       const selectors = [
-        "#upgrade-now-button", "#nav-giftcards", "#nav-shop", "#nav-money", "#nav-premium", "#nav-blog",
-        ".btr-feed:nth-child(3) > .btr-feeddesc", 
-        ".btr-feed:nth-child(3) > .btr-feedtitle", 
-        ".btr-feed:nth-child(2) > .btr-feeddesc", 
-        ".btr-feed:nth-child(2) > .btr-feedtitle", 
-        ".btr-feed:nth-child(1) > .btr-feeddesc", 
-        ".btr-feed:nth-child(1) > .btr-feedtitle", 
-        ".btr-feed:nth-child(1)", 
-        ".btr-feed:nth-child(2)", 
-        ".btr-feed:nth-child(3)", 
-        ".btr-feed:nth-child(3) > .btr-feedtitle", 
-        "edit.btr-feed:nth-child(2) > .btr-feedtitle", 
-        "edit.btr-feed:nth-child(2) > .btr-feeddesc", 
-        "edit.btr-feed:nth-child(1) > .btr-feedtitle", 
-        "edit.btr-feed:nth-child(1) > .btr-feeddesc", 
-        "edit.btr-feed:nth-child(1)", 
-        "edit.btr-feed:nth-child(2)", 
-        "edit.btr-feed:nth-child(3)"
+        "#upgrade-now-button",
+        "#nav-giftcards",
+        "#nav-shop",
+        "#nav-money",
+        "#nav-premium",
+        "#nav-blog",
+        ".btr-feed:nth-child(3) > .btr-feeddesc",
+        ".btr-feed:nth-child(3) > .btr-feedtitle",
+        ".btr-feed:nth-child(2) > .btr-feeddesc",
+        ".btr-feed:nth-child(2) > .btr-feedtitle",
+        ".btr-feed:nth-child(1) > .btr-feeddesc",
+        ".btr-feed:nth-child(1) > .btr-feedtitle",
+        ".btr-feed:nth-child(1)",
+        ".btr-feed:nth-child(2)",
+        ".btr-feed:nth-child(3)"
       ];
 
       selectors.forEach(selector => {
@@ -62,6 +67,7 @@
     }
   }
 
+  // Mutation observer to keep running removals on dynamic page changes
   const observer = new MutationObserver(() => {
     runRemovals();
   });
